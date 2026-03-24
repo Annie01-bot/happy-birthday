@@ -1,9 +1,11 @@
 const music = new Audio("happy_birthday.mp3");
 music.loop = true;
 
-document.addEventListener("click", function () {
-  music.play();
-}, { once: true });
+window.addEventListener("load", function () {
+  document.addEventListener("click", function () {
+    music.play();
+  }, { once: true });
+});
 // Import the data to customize and insert them into page
 const fetchData = () => {
   fetch("customize.json")
