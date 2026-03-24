@@ -352,3 +352,60 @@ body::after {
   font-size: 20px;
   opacity: 0.25;
 }
+.cake-popup{
+  position: fixed;
+  bottom: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  text-align:center;
+}
+
+.cake{
+  width:140px;
+  height:80px;
+  background: linear-gradient(#ff9ecf,#fff);
+  border-radius:10px;
+  position:relative;
+}
+
+.candles{
+  position:absolute;
+  top:-28px;
+  left:25px;
+  display:flex;
+  gap:15px;
+}
+
+.candle{
+  width:10px;
+  height:30px;
+  background: repeating-linear-gradient(45deg, red, red 3px, white 3px, white 6px);
+  border-radius:2px;
+  position:relative;
+}
+
+.flame{
+  width:8px;
+  height:12px;
+  background: orange;
+  border-radius:50%;
+  position:absolute;
+  top:-12px;
+  left:1px;
+  animation: flicker 0.4s infinite alternate, fadeout 4s forwards;
+}
+
+@keyframes flicker{
+  from{transform:scale(1);}
+  to{transform:scale(1.2);}
+}
+
+@keyframes fadeout{
+  to{opacity:0;}
+}
+
+.blow-msg{
+  color:#ff4da6;
+  margin-top:8px;
+  }
