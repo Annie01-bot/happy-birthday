@@ -409,3 +409,10 @@ body::after {
   color:#ff4da6;
   margin-top:8px;
   }
+#bg-music {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 9999;
+  width: 180px;
+}
